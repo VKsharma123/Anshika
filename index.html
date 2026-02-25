@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +8,7 @@
 <style>
 body{
 margin:0;
-font-family: 'Segoe UI', sans-serif;
+font-family:'Segoe UI',sans-serif;
 background:#f4f6f9;
 scroll-behavior:smooth;
 }
@@ -24,7 +23,6 @@ text-align:center;
 
 header img{
 width:80 px;
-margin-bottom:10 px;
 }
 
 /* Navigation */
@@ -39,14 +37,8 @@ color:white;
 text-decoration:none;
 margin:20 px;
 font-weight:bold;
-font-size:16 px;
 }
 
-nav a:hover{
-text-decoration:underline;
-}
-
-/* Hero Section */
 .hero{
 background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
 color:white;
@@ -69,25 +61,9 @@ z-index:1;
 }
 
 .hero h2{
-font-size:42 px;
-margin-bottom:15 px;
+font-size:40 px;
 }
 
-button{
-background:#f26b1d;
-color:white;
-padding:12 px 25 px;
-border:none;
-border-radius:30 px;
-cursor:pointer;
-font-size:16 px;
-}
-
-button:hover{
-background:#d95a10;
-}
-
-/* Sections */
 .section{
 padding:60 px 20 px;
 text-align:center;
@@ -96,7 +72,6 @@ text-align:center;
 .section h2{
 color:#0d2c4a;
 margin-bottom:30 px;
-font-size:32 px;
 }
 
 /* Services */
@@ -112,23 +87,47 @@ background:white;
 padding:25 px;
 width:260 px;
 border-radius:15 px;
-box-shadow:0 5 px 15 px rgba (0,0,0,0.1);
-transition:0.3s;
+box-shadow:05 px 15 px rgba (0,0,0,0.1);
+transition:0.3 s;
 }
 
 .service-box:hover{
 transform:translateY (-10 px);
-box-shadow:0 8 px 20 px rgba (0,0,0,0.2);
+}
+
+/* Stats Section */
+.stats{
+background:#0d2c4a;
+color:white;
+padding:60 px 20 px;
+display:flex;
+justify-content:center;
+gap:50 px;
+flex-wrap:wrap;
+}
+
+.stat-box{
+text-align:center;
+}
+
+.stat-box h3{
+font-size:40 px;
+margin:0;
+color:#f26b1d;
+}
+
+.stat-box p{
+margin:5 px 0;
+font-size:18 px;
 }
 
 /* Contact */
 .contact{
-background:#0d2c4a;
+background:#123d6b;
 color:white;
 padding:50 px 20 px;
 }
 
-/* Footer */
 footer{
 background:#081c2c;
 color:white;
@@ -136,7 +135,7 @@ text-align:center;
 padding:15 px;
 }
 
-/* WhatsApp Button */
+/* WhatsApp */
 .whatsapp{
 position:fixed;
 bottom:20 px;
@@ -147,11 +146,6 @@ padding:15 px 18 px;
 border-radius:50 %;
 font-size:22 px;
 text-decoration:none;
-box-shadow:05 px 10 px rgba (0,0,0,0.3);
-}
-
-.whatsapp:hover{
-background:#1ebe5d;
 }
 </style>
 </head>
@@ -159,7 +153,7 @@ background:#1ebe5d;
 <body>
 
 <header>
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Logo">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
 <h1>Sharma Enterprises</h1>
 <p>Engineering Safer Roads. Building Stronger Futures.</p>
 </header>
@@ -174,26 +168,40 @@ background:#1ebe5d;
 <div class="hero-content">
 <h2>Trusted Road Safety & Construction Solutions</h2>
 <p>Delivering Quality Infrastructure & Highway Safety Projects</p>
-<br>
-<button onclick="document.getElementById('contact').scrollIntoView()">Contact Us</button>
 </div>
 </section>
 
 <section class="section" id="about">
 <h2>About Us</h2>
-<p>Sharma Enterprises is a trusted provider of road safety and construction solutions in Madhya Pradesh. We specialize in road marking, crash barriers, signage installation and infrastructure development projects.</p>
+<p>Sharma Enterprises is a trusted road safety and construction solutions provider in Madhya Pradesh, delivering high-quality infrastructure projects with commitment and excellence.</p>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+<div class="stat-box">
+<h3>3+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-box">
+<h3>10+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat-box">
+<h3>100%</h3>
+<p>Client Satisfaction</p>
+</div>
 </section>
 
 <section class="section" id="services">
 <h2>Our Services</h2>
 <div class="services">
 <div class="service-box">Retro Reflective Sign Boards</div>
-<div class="service-box">Overhead & Gantry Signage</div>
 <div class="service-box">Thermoplastic Road Marking</div>
 <div class="service-box">W-Beam Crash Barriers</div>
-<div class="service-box">Safety Cones & Barricades</div>
+<div class="service-box">Safety Equipment Supply</div>
 <div class="service-box">Road Construction & Repair</div>
-<div class="service-box">Parking Area Marking</div>
 <div class="service-box">Structural Fabrication</div>
 </div>
 </section>
@@ -209,7 +217,6 @@ background:#1ebe5d;
 © 2026 Sharma Enterprises | All Rights Reserved
 </footer>
 
-<!-- WhatsApp Button -->
 <a class="whatsapp" href="https://wa.me/918875850126" target="_blank">💬</a>
 
 </body>

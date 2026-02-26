@@ -1,193 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sharma Enterprises | Engineering Safer Roads</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma Enterprises | Highway Safety Experts</title>
 
-        body {
-            background-color: #f4f6f9;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        header {
-            background: #0d3b66;
-            color: white;
-            padding: 20 px 50 px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-        header h1 {
-            font-size: 28 px;
-        }
+body{
+  background:#f4f7fa;
+  color:#333;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20 px;
-            font-weight: bold;
-        }
+/* NAVBAR */
+nav{
+  background:#0d1b2a;
+  padding:15 px 60 px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  width:100 %;
+  z-index:1000;
+}
 
-        .hero {
-            background: linear-gradient (rgb a(13,59,102,0.8), rgba (13,59,102,0.8)),
-                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100 px 20 px;
-        }
+nav h2{
+  color:#fca311;
+}
 
-        .hero h2 {
-            font-size: 36 px;
-            margin-bottom: 20 px;
-        }
+nav ul{
+  list-style:none;
+  display:flex;
+}
 
-        .hero p {
-            font-size: 18 px;
-        }
+nav ul li{
+  margin-left:25 px;
+}
 
-        .section {
-            padding: 60 px 50 px;
-        }
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
 
-        .section h2 {
-            text-align: center;
-            margin-bottom: 40 px;
-            color: #0d3b66;
-        }
+/* HERO */
+.hero{
+  height:100 vh;
+  background:linear-gradient (rgba (13,27,42,0.7),rgba (13,27,42,0.7)),
+  url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20 px;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat (auto-fit, minmax (250 px, 1 fr));
-            gap: 20 px;
-        }
+.hero h1{
+  font-size:45 px;
+}
 
-        .service-box {
-            background: white;
-            padding: 20 px;
-            border-radius: 8 px;
-            box-shadow: 0 4 px 8 px rgba (0,0,0,0.1);
-        }
+.hero p{
+  margin-top:15 px;
+  font-size:18 px;
+}
 
-        .service-box h3 {
-            color: #0d3b66;
-            margin-bottom: 10 px;
-        }
+.hero button{
+  margin-top:25 px;
+  padding:12 px 30 px;
+  border:none;
+  background:#fca311;
+  color:white;
+  border-radius:30 px;
+  font-weight:600;
+  cursor:pointer;
+}
 
-        .contact {
-            background: #0d3b66;
-            color: white;
-            text-align: center;
-            padding: 40 px 20 px;
-        }
+/* SECTIONS */
+.section{
+  padding:100 px 60 px;
+  text-align:center;
+}
 
-        .contact p {
-            margin: 10 px 0;
-        }
+.section h2{
+  margin-bottom:40 px;
+  color:#0d1b2a;
+}
 
-        footer {
-            background: #06263f;
-            color: white;
-            text-align: center;
-            padding: 15 px;
-        }
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat (auto-fit,minmax (250 px,1 fr));
+  gap:30 px;
+}
 
-        @media(max-width: 768 px){
-            header {
-                flex-direction: column;
-            }
-            nav {
-                margin-top: 10 px;
-            }
-        }
+.card{
+  background:white;
+  padding:30 px;
+  border-radius:15 px;
+  box-shadow:0 5 px 20 px rgba (0,0,0,0.1);
+  transition:0.3 s;
+}
 
-    </style>
+.card:hover{
+  transform:translateY (-10 px);
+}
+
+.card h3{
+  margin-bottom:15 px;
+  color:#fca311;
+}
+
+/* STATS */
+.stats{
+  background:#0d1b2a;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  padding:60 px 20 px;
+}
+
+.stat{
+  margin:20 px;
+  text-align:center;
+}
+
+.stat h1{
+  font-size:40 px;
+  color:#fca311;
+}
+
+/* CONTACT */
+.contact{
+  background:#fca311;
+  color:white;
+  padding:80 px 20 px;
+  text-align:center;
+}
+
+.contact button{
+  margin-top:20 px;
+  padding:10 px 25 px;
+  border:none;
+  background:#0d1b2a;
+  color:white;
+  border-radius:25 px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#0d1b2a;
+  color:white;
+  text-align:center;
+  padding:20 px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768 px){
+  nav{
+    flex-direction:column;
+  }
+  nav ul{
+    margin-top:10 px;
+  }
+  .hero h1{
+    font-size:30 px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Sharma Enterprises</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<!-- NAVBAR -->
+<nav>
+  <h2>Sharma Enterprises</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-<section class="hero">
-    <h2>Engineering Safer Roads.<br>Building Stronger Futures.</h2>
-    <p>Highway Safety & Road Infrastructure Experts</p>
-</section>
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Engineering Safer Roads. Building Stronger Futures.</h1>
+    <p>Highway Safety | Road Marking | Crash Barriers | Infrastructure Projects</p>
+    <button>Get Free Consultation</button>
+  </div>
+</div>
 
-<section class="section" id="services">
-    <h2>Our Products & Services</h2>
-
-    <div class="services">
-        <div class="service-box">
-            <h3>Retro Reflective Sign Boards</h3>
-            <p>(IRC Compliant)</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Overhead & Gantry Signage Installation</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Thermoplastic Road Marking Works</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Road Studs (Cat Eyes) & Delineators</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>W-Beam Crash Barriers</h3>
-            <p>Supply & Fixing</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Safety Cones, Barricades & Traffic Equipment</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Road Construction & Repair Works</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Industrial & Parking Area Marking</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Paver Block & Drainage Construction</h3>
-        </div>
-
-        <div class="service-box">
-            <h3>Structural Fabrication & Highway Safety Projects</h3>
-        </div>
+<!-- SERVICES -->
+<div class="section">
+  <h2>Our Core Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Retro Reflective Sign Boards</h3>
+      <p>IRC compliant signage solutions for highways & roads.</p>
     </div>
-</section>
+    <div class="card">
+      <h3>Thermoplastic Road Marking</h3>
+      <p>High durability road marking and safety painting works.</p>
+    </div>
+    <div class="card">
+      <h3>W-Beam Crash Barriers</h3>
+      <p>Supply & fixing of high-quality safety crash barriers.</p>
+    </div>
+    <div class="card">
+      <h3>Road Construction</h3>
+      <p>Complete road infrastructure & civil construction services.</p>
+    </div>
+  </div>
+</div>
 
-<section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Contact Person:</strong> V K Sharma</p>
-    <p><strong>Phone:</strong> +91 8875850126</p>
-    <p><strong>Email:</strong> sharmaenterprises0126@gmail.com</p>
-    <p><strong>Location:</strong> Nipaniya, Indore (MP) 452010</p>
-</section>
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <h1>10+</h1>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat">
+    <h1>3+</h1>
+    <p>Years Experience</p>
+  </div>
+  <div class="stat">
+    <h1>100%</h1>
+    <p>Client Satisfaction</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+  <h2>Contact Sharma Enterprises</h2>
+  <p>VK Sharma | B.Tech | MBA | Civil & Highway Engineering</p>
+  <p>Email: sharmaenterprises0126@gmail.com</p>
+  <p>Phone: +91-8875850126</p>
+  <button>Call Now</button>
+</div>
 
 <footer>
-    © 2026 Sharma Enterprises | All Rights Reserved
+  © 2026 Sharma Enterprises | All Rights Reserved
 </footer>
 
 </body>

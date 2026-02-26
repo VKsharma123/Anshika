@@ -1,182 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sharma Enterprises | Engineering Safer Roads</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Sharma Enterprises | Engineering Safer Roads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#f4f6f9;color:#333;scroll-behavior:smooth;}
-header{background:#0b2c4d;color:#fff;padding:15 px 50 px;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;top:0;z-index:1000;}
-header h1{font-size:22 px;}
-header nav a{color:#fff;text-decoration:none;margin-left:25 px;font-size:14 px;}
-header nav a:hover{color:#ff7a00;}
+        body {
+            background-color: #f4f6f9;
+        }
 
-.hero{
-height:100 vh;
-background:linear-gradient (rgba (11,44,77,0.8),rgba (11,44,77,0.8)),
-url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-display:flex;justify-content:center;align-items:center;text-align:center;color:#fff;padding:20 px;
-}
-.hero h2{font-size:48 px;}
-.hero p{margin:20 px 0;font-size:18 px;}
-.btn{
-display:inline-block;padding:12 px 30 px;margin:10 px;border-radius:30 px;
-text-decoration:none;font-weight:600;
-}
-.btn-primary{background:#ff7a00;color:#fff;}
-.btn-secondary{background:#00b3b3;color:#fff;}
+        header {
+            background: #0d3b66;
+            color: white;
+            padding: 20 px 50 px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-section{padding:80 px 50 px;}
-.section-title{text-align:center;margin-bottom:50 px;font-size:32 px;color:#0b2c4d;}
+        header h1 {
+            font-size: 28 px;
+        }
 
-.about{display:flex;flex-wrap:wrap;gap:30 px;align-items:center;}
-.about img{width:100 %;max-width:500 px;border-radius:10 px;}
-.about-text{flex:1;}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20 px;
+            font-weight: bold;
+        }
 
-.services{display:grid;grid-template-columns:repeat (auto-fit,minmax (250 px,1 fr));gap:25 px;}
-.service-card{
-background:#fff;padding:30 px;border-radius:10 px;
-box-shadow:0 4 px 10 px rgba (0,0,0,0.1);
-transition:0.3 s;
-}
-.service-card:hover{transform:translateY (-10 px);}
-.service-card h4{margin-bottom:15 px;color:#0b2c4d;}
+        .hero {
+            background: linear-gradient (rgb a(13,59,102,0.8), rgba (13,59,102,0.8)),
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100 px 20 px;
+        }
 
-.projects{display:grid;grid-template-columns:repeat (auto-fit,minmax (250 px,1 fr));gap:20 px;}
-.projects img{width:100 %;border-radius:10 px;}
+        .hero h2 {
+            font-size: 36 px;
+            margin-bottom: 20 px;
+        }
 
-.why{background:#0b2c4d;color:#fff;text-align:center;}
-.why-items{display:grid;grid-template-columns:repeat (auto-fit,minmax (200 px,1 fr));gap:20 px;margin-top:40 px;}
-.why-item{padding:20 px;}
+        .hero p {
+            font-size: 18 px;
+        }
 
-.process{display:flex;flex-wrap:wrap;justify-content:space-around;text-align:center;gap:20 px;}
-.process-step{background:#fff;padding:20 px;border-radius:10 px;width:180 px;box-shadow:04 px 10 px rgba (0,0,0,0.1);}
+        .section {
+            padding: 60 px 50 px;
+        }
 
-.contact form{display:flex;flex-direction:column;gap:15 px;max-width:500 px;margin:auto;}
-.contact input,.contact textarea{
-padding:12 px;border:1 px solid #ccc;border-radius:5 px;width:100 %;
-}
-.contact button{
-background:#ff7a00;color:#fff;border:none;padding:12 px;border-radius:5 px;font-weight:bold;
-}
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40 px;
+            color: #0d3b66;
+        }
 
-footer{
-background:#0b2c4d;color:#fff;text-align:center;padding:20 px;
-}
+        .services {
+            display: grid;
+            grid-template-columns: repeat (auto-fit, minmax (250 px, 1 fr));
+            gap: 20 px;
+        }
 
-.whatsapp{
-position:fixed;bottom:20 px;right:20 px;background:#25D366;
-color:#fff;padding:15 px;border-radius:50 %;font-size:22 px;text-decoration:none;
-}
+        .service-box {
+            background: white;
+            padding: 20 px;
+            border-radius: 8 px;
+            box-shadow: 0 4 px 8 px rgba (0,0,0,0.1);
+        }
 
-@media(max-width:768 px){
-.hero h2{font-size:32 px;}
-header{padding:15 px;}
-section{padding:60 px 20 px;}
-}
-</style>
+        .service-box h3 {
+            color: #0d3b66;
+            margin-bottom: 10 px;
+        }
+
+        .contact {
+            background: #0d3b66;
+            color: white;
+            text-align: center;
+            padding: 40 px 20 px;
+        }
+
+        .contact p {
+            margin: 10 px 0;
+        }
+
+        footer {
+            background: #06263f;
+            color: white;
+            text-align: center;
+            padding: 15 px;
+        }
+
+        @media(max-width: 768 px){
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 10 px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
 
 <header>
-<h1>Sharma Enterprises</h1>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+    <h1>Sharma Enterprises</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="hero" id="home">
-<div>
-<h2>Engineering Safer Roads</h2>
-<p>Building Stronger Futures with Quality Infrastructure Solutions</p>
-<a href="#services" class="btn btn-primary">Our Services</a>
-<a href="#contact" class="btn btn-secondary">Request Quote</a>
-</div>
+<section class="hero">
+    <h2>Engineering Safer Roads.<br>Building Stronger Futures.</h2>
+    <p>Highway Safety & Road Infrastructure Experts</p>
 </section>
 
-<section id="about">
-<h2 class="section-title">About Us</h2>
-<div class="about">
-<img src="https://images.unsplash.com/photo-1581091870627-3c1d6e6f2c0d?auto=format&fit=crop&w=800&q=80">
-<div class="about-text">
-<p>Sharma Enterprises is a professional infrastructure company based in Indore (MP), delivering IRC compliant road safety, signage, marking and structural solutions with commitment to quality and timely completion.</p>
-</div>
-</div>
-</section>
+<section class="section" id="services">
+    <h2>Our Products & Services</h2>
 
-<section id="services">
-<h2 class="section-title">Our Services</h2>
-<div class="services">
-<div class="service-card"><h4>Retro Reflective Sign Boards</h4>
-  <p>High quality IRC compliant signage solutions.</p>
-</div>
-<div class="service-card"><h4>Thermoplastic Road Marking</h4>
-  <p>Durable and long-lasting road marking works.</p></div>
-<div class="service-card"><h4>W-Beam Crash Barriers</h4>
-  <p>Supply & installation of highway crash barriers.</p></div>
-<div class="service-card"><h4>Road Studs & Delineators</h4>
-  <p>Enhanced night visibility solutions.</p></div>
-<div class="service-card"><h4>Parking Area Marking</h4>
-  <p>Industrial & commercial parking layouts.</p></div>
-<div class="service-card"><h4>Road Construction Works</h4>
-  <p>Complete road construction & repair services.</p></div>
-</div>
-</section>
+    <div class="services">
+        <div class="service-box">
+            <h3>Retro Reflective Sign Boards</h3>
+            <p>(IRC Compliant)</p>
+        </div>
 
-<section id="projects">
-<h2 class="section-title">Our Projects</h2>
-<div class="projects">
-<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1541976076758-347942db1970?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
-</div>
-</section>
+        <div class="service-box">
+            <h3>Overhead & Gantry Signage Installation</h3>
+        </div>
 
-<section class="why">
-<h2 class="section-title" style="color:#fff;">Why Choose Us</h2>
-<div class="why-items">
-<div class="why-item">✔ IRC Compliant Standards</div>
-<div class="why-item">✔ Skilled Workforce</div>
-<div class="why-item">✔ Quality Materials</div>
-<div class="why-item">✔ Timely Completion</div>
-</div>
-</section>
+        <div class="service-box">
+            <h3>Thermoplastic Road Marking Works</h3>
+        </div>
 
-<section>
-<h2 class="section-title">Our Work Process</h2>
-<div class="process">
-<div class="process-step">1️⃣ Site Inspection</div>
-<div class="process-step">2️⃣ Planning</div>
-<div class="process-step">3️⃣ Execution</div>
-<div class="process-step">4️⃣ Quality Check</div>
-<div class="process-step">5️⃣ Handover</div>
-<div class="process-step">6️⃣ Maintenance and Support</div>
-</div>
+        <div class="service-box">
+            <h3>Road Studs (Cat Eyes) & Delineators</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>W-Beam Crash Barriers</h3>
+            <p>Supply & Fixing</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Safety Cones, Barricades & Traffic Equipment</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>Road Construction & Repair Works</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>Industrial & Parking Area Marking</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>Paver Block & Drainage Construction</h3>
+        </div>
+
+        <div class="service-box">
+            <h3>Structural Fabrication & Highway Safety Projects</h3>
+        </div>
+    </div>
 </section>
 
 <section class="contact" id="contact">
-<h2 class="section-title">Contact Us</h2>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="5" placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
-</form>
+    <h2>Contact Us</h2>
+    <p><strong>Contact Person:</strong> V K Sharma</p>
+    <p><strong>Phone:</strong> +91 8875850126</p>
+    <p><strong>Email:</strong> sharmaenterprises0126@gmail.com</p>
+    <p><strong>Location:</strong> Nipaniya, Indore (MP) 452010</p>
 </section>
 
 <footer>
-<p>© 2026 Sharma Enterprises | Nipaniya, Indore (MP) | +91 8875850126</p>
+    © 2026 Sharma Enterprises | All Rights Reserved
 </footer>
-
-<a href="https://wa.me/918875850126" class="whatsapp">💬</a>
 
 </body>
 </html>
